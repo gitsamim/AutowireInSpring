@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context 
+                           http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.springframework.org/schema/mvc
+                           http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+ 
+<!--         <bean id="heart" class="com.autowire.spring.Heart"></bean>
+    
+	<bean id="human" class="com.autowire.spring.Human" autowire="byName" /> 
+    
+    <bean id="heartObj" class="com.autowire.spring.Heart"></bean>
+    
+	<bean id="human" class="com.autowire.spring.Human" autowire="byType" /> 
+	
+		<bean id="heartObj" class="com.autowire.spring.Heart"></bean>
+    
+	<bean id="human" class="com.autowire.spring.Human" autowire="constructor" /> -->
+	
+	<context:annotation-config></context:annotation-config>
+	
+	<bean id="humanHeart" class="com.autowire.spring.Heart">
+	    <property name="nameOfAnimal" value="Human"></property>
+	    <property name="noOfHeart" value="1"></property>
+	</bean>
+	
+	<bean id="octopousHeart" class="com.autowire.spring.Heart">
+	    <property name="nameOfAnimal" value="Octopous"></property>
+	    <property name="noOfHeart" value="3"></property>
+	</bean>
+    
+	<bean id="human" class="com.autowire.spring.Human" />
+	    
+  
+</beans>  
