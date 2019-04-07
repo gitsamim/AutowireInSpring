@@ -20,6 +20,7 @@ public class Human {
 	@Autowired
 	@Qualifier("octopousHeart")
 	public void setHeart(Heart heart) {
+		System.out.println("setHeart is Calling !! ");
 		this.heart = heart;
 	}
 	
